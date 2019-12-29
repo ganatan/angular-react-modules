@@ -19,6 +19,12 @@ export class HomeComponent implements OnInit {
     this.features =
       [
         {
+          name: 'Chart.js',
+          description: 'Simple yet flexible JavaScript charting for designers & developers',
+          icon: 'fa-share-alt-square',
+          link: 'chartjs'
+        },
+        {
           name: 'Components',
           description: 'Define and control views',
           icon: 'fa-share-alt-square',

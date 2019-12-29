@@ -6,6 +6,10 @@ import { NotFoundComponent } from './modules/general/not-found/not-found.compone
 
 const routes: Routes = [
   {
+    path: 'chartjs',
+    loadChildren: () => import('./modules/application/chartjs/chartjs.module').then(mod => mod.ChartjsModule)
+  },
+  {
     path: 'services',
     loadChildren: () => import('./modules/application/services/services.module').then(mod => mod.ServicesModule)
   },
