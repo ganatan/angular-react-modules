@@ -1,0 +1,111 @@
+<div class="row justify-content-center pt-2">
+  <div class="text-center col">
+    <h1 class="h3">Feature : Template-driven Forms</h1>
+    <hr>
+  </div>
+</div>
+<div class="row justify-content-center p-2">
+  <div class="col-12 col-sm-12 col-md-7 col-lg-7 col-xl-7">
+    <div class="card">
+      <div class="card-header text-center">
+        <h4>Movie : <span class="text-primary font-weight-bold">Avengers: Endgame</span></h4>
+      </div>
+      <div class="card-body">
+        <form #form="ngForm">
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="name">Name</label>
+              <input type="text" required minlength="12" class="form-control" name="name" id="name"
+                [(ngModel)]="movie.name" #name="ngModel">
+              <div *ngIf="name.invalid && (name.dirty || name.touched)" class="alert alert-danger mt-2" role="alert">
+                <p *ngIf="name.errors.required" class="card-text">Name is required.</p>
+                <p *ngIf="name.errors.minlength" class="card-text">Name must be at least 12 characters long.</p>
+              </div>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="releaseDate">Release Date</label>
+              <input type="text" class="form-control" name="releaseDate" id="releaseDate" [ngModel]="movie.releaseDate"
+                #releaseDate="ngModel">
+            </div>
+          </div>
+          <div class="form-row pb-4">
+            <div class="form-group col-md-4">
+              <label for="domestic">Domestic</label>
+              <input type="text" class="form-control" name="domestic" id="domestic"
+                [ngModel]="movie.domestic | currency">
+            </div>
+            <div class="form-group col-md-4">
+              <label for="international">International</label>
+              <input type="text" class="form-control" name="international" id="international"
+                [ngModel]="movie.international | currency">
+            </div>
+            <div class="form-group col-md-4">
+              <label for="worldwide">Worldwide</label>
+              <input type="text" class="form-control" name="worldwide" id="worldwide"
+                [ngModel]="movie.worldwide | currency">
+            </div>
+          </div>
+          <div class="form-row justify-content-center">
+            <button type="submit" class="btn btn-primary mr-4" (click)="form.resetForm({})">Reset</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5">
+    <table class="table table-hover table-striped table-bordered table-responsive-md table-sm">
+      <thead>
+        <tr>
+          <th class="text-secondary" style="text-align:center;">Name</th>
+          <th class="text-secondary" style="text-align:center;">Value</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="text-primary" style="cursor: pointer;text-align:center">name.dirty</td>
+          <td class="text-info" style="cursor: pointer;text-align:center">{{ name.dirty | json }}</td>
+        </tr>
+        <tr>
+          <td class="text-primary" style="cursor: pointer;text-align:center">name.errors</td>
+          <td class="text-info" style="cursor: pointer;text-align:center">{{ name.errors | json }}</td>
+        </tr>
+        <tr>
+          <td class="text-primary" style="cursor: pointer;text-align:center">name.status</td>
+          <td class="text-info" style="cursor: pointer;text-align:center">{{ name.status | json }}</td>
+        </tr>
+        <tr>
+          <td class="text-primary" style="cursor: pointer;text-align:center">name.invalid</td>
+          <td class="text-info" style="cursor: pointer;text-align:center">{{ name.invalid | json }}</td>
+        </tr>
+        <tr>
+          <td class="text-primary" style="cursor: pointer;text-align:center">name.pristine</td>
+          <td class="text-info" style="cursor: pointer;text-align:center">{{ name.pristine | json }}</td>
+        </tr>
+        <tr>
+          <td class="text-primary" style="cursor: pointer;text-align:center">form.value</td>
+          <td class="text-info" style="cursor: pointer;text-align:center">{{ form.value | json }}</td>
+        </tr>
+        <tr>
+          <td class="text-primary" style="cursor: pointer;text-align:center">form.valid</td>
+          <td class="text-info" style="cursor: pointer;text-align:center">{{ form.valid | json }}</td>
+        </tr>
+        <tr>
+          <td class="text-primary" style="cursor: pointer;text-align:center">form.invalid</td>
+          <td class="text-info" style="cursor: pointer;text-align:center">{{ form.invalid | json }}</td>
+        </tr>
+        <tr>
+          <td class="text-primary" style="cursor: pointer;text-align:center">form.pristine</td>
+          <td class="text-info" style="cursor: pointer;text-align:center">{{ form.pristine | json }}</td>
+        </tr>
+        <tr>
+          <td class="text-primary" style="cursor: pointer;text-align:center">form.dirty</td>
+          <td class="text-info" style="cursor: pointer;text-align:center">{{ form.dirty | json }}</td>
+        </tr>
+        <tr>
+          <td class="text-primary" style="cursor: pointer;text-align:center">form.status</td>
+          <td class="text-info" style="cursor: pointer;text-align:center">{{ form.status | json }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

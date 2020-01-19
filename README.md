@@ -1,6 +1,6 @@
 # Angular 8 Example Features
 
-> An Angular starter kit featuring [Angular 8.2.14](https://angular.io), [Angular CLI 8.3.22](https://cli.angular.io/)
+> An Angular starter kit featuring [Angular 8.2.14](https://angular.io), [Angular CLI 8.3.23](https://cli.angular.io/)
 
 > it's part of a repo series designed to create a Progressive Web App with Angular
 
@@ -42,10 +42,10 @@ in your browser go to [http://localhost:4200](http://localhost:4200)
 ### Prerequisites
 What you need to run this app:
 * Angular version 8.2.14
-* Angular CLI version 8.3.22
+* Angular CLI version 8.3.23
 * Typescript version 3.5.3
-* Node.js version 12.14.0 LTS (Long Term Support)
-* npm (node package manager) version 6.13.4
+* Node.js version 12.14.1 LTS (Long Term Support)
+* npm (node package manager) version 6.13.6
 
 
 ## Getting Started
@@ -68,7 +68,7 @@ What you need to run this app:
 * `npm run e2e`
 
 ### Author
-* Updated : 11/01/2020
+* Updated : 19/01/2020
 * Author  : danny
 
 ### Documentation
@@ -80,5 +80,6 @@ Tutoriels en français
 - Installation - https://www.ganatan.com/tutorials/components-avec-angular
 - Installation - https://www.ganatan.com/tutorials/services-avec-angular
 - Installation - https://www.ganatan.com/tutorials/charts-avec-angular
+- Installation - https://www.ganatan.com/tutorials/template-driven-forms-avec-angular
 
 - Tutoriels Etape par étape - https://www.ganatan.com/tutorials

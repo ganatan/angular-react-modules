@@ -6,6 +6,11 @@ import { NotFoundComponent } from './modules/general/not-found/not-found.compone
 
 const routes: Routes = [
   {
+    path: 'template-driven-forms',
+    loadChildren: () => import('./modules/application/template-driven-forms/template-driven-forms.module')
+      .then(mod => mod.TemplateDrivenFormsModule)
+  },
+  {
     path: 'chartjs',
     loadChildren: () => import('./modules/application/chartjs/chartjs.module').then(mod => mod.ChartjsModule)
   },
