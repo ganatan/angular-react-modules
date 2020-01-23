@@ -15,6 +15,7 @@ export class TemplateDrivenFormsComponent implements OnInit {
     this.movie.domestic = 858373000;
     this.movie.international = 2797800564;
     this.movie.worldwide = 2797800564;
+    this.movie.franchise = true;
   }
 
   ngOnInit() {

@@ -45,6 +45,10 @@
                 [ngModel]="movie.worldwide | currency">
             </div>
           </div>
+          <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="franchise" name="franchise" [ngModel]="movie.franchise">
+            <label class="form-check-label" for="franchise">Franchise</label>
+          </div>
           <div class="form-row justify-content-center">
             <button type="submit" class="btn btn-primary mr-4" (click)="form.resetForm({})">Reset</button>
           </div>
