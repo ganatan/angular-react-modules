@@ -7,15 +7,14 @@ import { Movie } from './movie';
   styleUrls: ['./template-driven-forms.component.css']
 })
 export class TemplateDrivenFormsComponent implements OnInit {
-  movie = new Movie();
+  movie: Movie = new Movie();
 
   constructor() {
     this.movie.name = 'Avengers : Endgame';
     this.movie.releaseDate = '04/04/2019';
-    this.movie.domestic = 858373000;
-    this.movie.international = 2797800564;
-    this.movie.worldwide = 2797800564;
-    this.movie.franchise = true;
+    this.movie.domestic = '$858,373,000';
+    this.movie.international = '$2,797,800,564';
+    this.movie.worldwide = '$2,797,800,564';
   }
 
   ngOnInit() {

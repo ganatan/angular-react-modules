@@ -1,7 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { FormsModule } from '@angular/forms';
 
 import { TemplateDrivenFormsComponent } from './template-driven-forms.component';
+import { FormsModule } from '@angular/forms';
 
 describe('TemplateDrivenFormsComponent', () => {
   let component: TemplateDrivenFormsComponent;
