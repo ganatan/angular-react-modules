@@ -1,6 +1,6 @@
-# Angular 9 Example Features
+# Angular 9 Example Modules
 
-> An Angular starter kit featuring [Angular 9.0.5](https://angular.io), [Angular CLI 9.0.5](https://cli.angular.io/)
+> An Angular starter kit featuring [Angular 9.1.2](https://angular.io), [Angular CLI 9.1.1](https://cli.angular.io/)
 
 > it's part of a repo series designed to create a Progressive Web App with Angular
 
@@ -8,27 +8,28 @@
 * [Step 2 : Example Routing](https://github.com/ganatan/angular-example-routing)
 * [Step 3 : Example Lazy-loading](https://github.com/ganatan/angular-example-lazy-loading)
 * [Step 4 : Example Bootstrap](https://github.com/ganatan/angular-example-bootstrap)
-* [Step 5 : Example Features](https://github.com/ganatan/angular-features)
+* [Step 5 : Example Modules](https://github.com/ganatan/angular-example-modules)
 * [Step 6 : Example Server Side Rendering](https://github.com/ganatan/angular-example-ssr)
 * [Step 7 : Example HTTP Client](https://github.com/ganatan/angular-example-httpclient)
 * [Step 8 : Example Transfer State](https://github.com/ganatan/angular-example-transferstate)
 * [Step 9 : Example PWA](https://github.com/ganatan/angular-example-pwa)
 * [Step 10 : Example SEO](https://github.com/ganatan/angular-example-seo)
 
-* [Step 11 : Angular 8 Application](https://github.com/ganatan/angular8-app)
+* [Step 11 : Angular 9 Application](https://github.com/ganatan/angular9-app)
 
 # Web Application Live Demo
-[https://angular.ganatan.com](https://angular.ganatan.com)
-
+<a href="https://angular.ganatan.com/">
+  <img src="https://media.giphy.com/media/RfqiR12yhtHpwaItBq/giphy.gif" alt="Angular 9 Example Application"/>
+</a>
 
 ## Quick start
 
 ```bash
 # clone the repo
-git clone https://github.com/ganatan/angular-example-features.git
+git clone https://github.com/ganatan/angular-example-modules.git
 
 # change directory
-cd angular-example-features
+cd angular-example-modules
 
 # install the repo with npm
 npm install
@@ -40,17 +41,16 @@ npm start
 in your browser go to [http://localhost:4200](http://localhost:4200) 
 
 ### Prerequisites
-What you need to run this app:
-* Angular version 9.0.5
-* Angular CLI version 9.0.5
-* Typescript version 3.7.5
-* Node.js version 12.16.1 LTS (Long Term Support)
-* npm (node package manager) version 6.14.2
+What do you need to run this app:
+* Angular version 9.1.2
+* Angular CLI version 9.1.1
+* Typescript version 3.8.3
+* Node.js version 12.16.2 LTS (Long Term Support)
+* npm (node package manager) version 6.14.4
 
 * Jquery version 3.4.1
 * Bootstrap version 4.4.1
 * Fontawesome version 5.12.1
-
 
 ## Getting Started
 
@@ -71,19 +71,19 @@ What you need to run this app:
 * `npm run test`
 * `npm run e2e`
 
+### Prototype Bootstrap
+* `change directory` cd ui
+* launch html pages in your browser
+
 ### Author
-* Updated : 07/03/2020
+* Updated : 20/04/2020
 * Author  : danny
 
 ### Documentation
 
 English Tutorials
-- Tutorials Step by Step - https://www.ganatan.com/tutorials/en
+- Tutorials Step-by-Step - https://www.ganatan.com/tutorials/en
 
 Tutoriels en français
-- Installation - https://www.ganatan.com/tutorials/components-avec-angular
-- Installation - https://www.ganatan.com/tutorials/services-avec-angular
-- Installation - https://www.ganatan.com/tutorials/charts-avec-angular
-- Installation - https://www.ganatan.com/tutorials/template-driven-forms-avec-angular
-
+- Installation - https://www.ganatan.com/tutorials/modules-avec-angular
 - Tutoriels Etape par étape - https://www.ganatan.com/tutorials
