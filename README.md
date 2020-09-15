@@ -71,17 +71,28 @@ What do you need to run this app:
 
 ## Chrome Installation on Linux
 
+```bash
 sudo sh -c 'echo "deb [arch=amd64] https://dl.google.com/linux/chrome/deb/ stable main" > /etc/apt/sources.list.d/google-chrome.list'
+
 wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+
 sudo apt-get update
+
 sudo apt-get install google-chrome-stable --yes
 
-### Prototype Bootstrap
+```
+
+### Prototype Bootstrap 4
 * `change directory` cd ui
 * launch html pages in your browser
 
+### Prototype Bootstrap 5.0.0-alpha1
+* `change directory` cd ui-v5
+* launch html pages in your browser
+
+
 ### Author
-* Updated : 12/09/2020
+* Updated : 14/09/2020
 * Author  : danny
 
 ### Documentation
