@@ -1,17 +1,15 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { FormsModule } from '@angular/forms';
-import { ReactiveFormsModule } from '@angular/forms';
 
 import { ExerciceComponent } from './exercice.component';
+import { FormsModule } from '@angular/forms';
 
-describe('ExerciceComponent', () => {
+describe('01-init - Component', () => {
   let component: ExerciceComponent;
   let fixture: ComponentFixture<ExerciceComponent>;
 
   beforeEach(async () => {
     TestBed.configureTestingModule({
       imports: [
-        ReactiveFormsModule,
         FormsModule,
       ],
       declarations: [ExerciceComponent]
