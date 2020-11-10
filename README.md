@@ -1,6 +1,6 @@
 # Angular 10 Example Modules
 
-> An Angular starter kit featuring [Angular 10.2.2](https://angular.io), [Angular CLI 10.2.0](https://cli.angular.io/)
+> An Angular starter kit featuring [Angular 10.2.3](https://angular.io), [Angular CLI 10.2.0](https://cli.angular.io/)
 
 > it's part of a repo series designed to create a Progressive Web App with Angular
 
