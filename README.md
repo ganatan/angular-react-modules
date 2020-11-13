@@ -1,6 +1,6 @@
-# Angular 10 Example Modules
+# Angular 11 Example Modules
 
-> An Angular starter kit featuring [Angular 10.2.3](https://angular.io), [Angular CLI 10.2.0](https://cli.angular.io/)
+> An Angular starter kit featuring [Angular 11.0.0](https://angular.io), [Angular CLI 11.0.0](https://cli.angular.io/)
 
 > it's part of a repo series designed to create a Progressive Web App with Angular
 
@@ -15,11 +15,11 @@
 * [Step 9 : Example PWA](https://github.com/ganatan/angular-example-pwa)
 * [Step 10 : Example SEO](https://github.com/ganatan/angular-example-seo)
 
-* [Step 11 : Angular 10 Application](https://github.com/ganatan/angular10-app)
+* [Step 11 : Angular 11 Application](https://github.com/ganatan/angular11-app)
 
 # Web Application Live Demo
 <a href="https://angular.ganatan.com/">
-  <img src="https://media.giphy.com/media/RfqiR12yhtHpwaItBq/giphy.gif" alt="Angular 10 Example Application"/>
+  <img src="https://media.giphy.com/media/RfqiR12yhtHpwaItBq/giphy.gif" alt="Angular 11 Example Application"/>
 </a>
 
 ## Quick start
