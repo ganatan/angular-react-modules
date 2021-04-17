@@ -1,6 +1,6 @@
 # Angular 11 Example Modules
 
-> An Angular starter kit featuring [Angular 11.0.3](https://angular.io), [Angular CLI 11.0.3](https://cli.angular.io/)
+> An Angular starter kit featuring [Angular 11.2.10](https://angular.io), [Angular CLI 11.2.9](https://cli.angular.io/)
 
 > it's part of a repo series designed to create a Progressive Web App with Angular
 
@@ -14,16 +14,16 @@
 ```bash
 # choose a repo
 # download the example or clone the repo from github
-git clone https://github.com/ganatan/angular-example-modules.git
+git clone https://github.com/ganatan/angular-modules.git
 
 # download the example or clone the repo from gitlab
-git clone https://gitlab.com/ganatan/angular-example-modules.git
+git clone https://gitlab.com/ganatan/angular-modules.git
 
 # download the example or clone the repo from bitbucket
-git clone https://bitbucket.org/ganatan/angular-example-modules.git
+git clone https://bitbucket.org/ganatan/angular-modules.git
 
 # change directory
-cd angular-example-modules
+cd angular-modules
 
 # install the repo with npm
 npm install
