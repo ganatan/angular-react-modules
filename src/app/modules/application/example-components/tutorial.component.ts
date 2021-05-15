@@ -13,6 +13,7 @@ export class TutorialComponent implements OnInit {
   smartphoneSelected: Smartphone;
 
   constructor() {
+    this.smartphoneSelected = new Smartphone;
     this.smartphones =
       [
         { name: 'iPhone 3G', model: 'Apple', prize: '560', year: '2008' },
@@ -36,7 +37,7 @@ export class TutorialComponent implements OnInit {
   }
 
   onReset(): void {
-    this.smartphoneSelected = null;
+//    this.smartphoneSelected = null;
   }
 
 }
