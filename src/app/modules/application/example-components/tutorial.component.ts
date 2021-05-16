@@ -13,7 +13,6 @@ export class TutorialComponent implements OnInit {
   smartphoneSelected: Smartphone;
 
   constructor() {
-    this.smartphoneSelected = new Smartphone;
     this.smartphones =
       [
         { name: 'iPhone 3G', model: 'Apple', prize: '560', year: '2008' },
@@ -27,6 +26,7 @@ export class TutorialComponent implements OnInit {
         { name: 'iPhone XR', model: 'Apple', prize: '560', year: '2018' },
         { name: 'iPhone 11', model: 'Apple', prize: '560', year: '2019' },
       ];
+      this.smartphoneSelected = this.smartphones[0];
   }
 
   ngOnInit(): void {
@@ -37,7 +37,7 @@ export class TutorialComponent implements OnInit {
   }
 
   onReset(): void {
-//    this.smartphoneSelected = null;
+    this.smartphoneSelected = this.smartphones[0];
   }
 
 }
