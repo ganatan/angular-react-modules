@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { environment } from '../../../../environments/environment';
+import { Inject, PLATFORM_ID } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
 
 @Component({
   selector: 'app-home',
@@ -14,54 +16,57 @@ export class HomeComponent implements OnInit {
   fontawesome = environment.application.fontawesome;
 
   features: any;
-
-  constructor() {
+  constructor(
+    @Inject(PLATFORM_ID) private platformId: object) {
     this.features =
       [
         {
           name: 'Bootstrap',
-          description: 'Bootstrap Description',
+          description: 'How to use Buttons, Alerts, Pagination, Tables, Collapses',
           icon: 'fab fa-bootstrap',
           link: 'bootstrap'
         },
         {
-          name: 'Reactive Form',
-          description: 'Reactive Form Description',
-          icon: 'fab fa-bootstrap',
-          link: 'reactive-form'
-        },
-        {
-          name: 'Services',
-          description: 'Services Description',
-          icon: 'fab fa-bootstrap',
-          link: 'services'
-        },
-        {
           name: 'Components',
-          description: 'Components Description',
-          icon: 'fab fa-bootstrap',
+          description: 'Channel component with Input, Output and Event Emitter',
+          icon: 'far fa-clone',
           link: 'components'
         },
         {
-          name: 'Template Driven Forms',
-          description: 'Template Driven Forms Description',
-          icon: 'fab fa-bootstrap',
-          link: 'template-driven-forms'
+          name: 'Services',
+          description: 'Use services to view a playlist and a youtube player',
+          icon: 'fas fa-handshake',
+          link: 'services'
+        },
+        {
+          name: 'Reactive Forms',
+          description: 'A model-driven approach to handling form inputs',
+          icon: 'far fa-file-alt',
+          link: 'forms'
+        },
+        {
+          name: 'Template Driven',
+          description: 'Forms are the mainstay of business applications',
+          icon: 'far fa-file-alt',
+          link: 'forms'
         },
       ];
 
   }
 
   ngOnInit(): void {
-    this.loadScript('assets/params/js/index.js');
-  }
 
-  loadScript(name: string): void {
-    const s = document.createElement('script');
-    s.type = 'text/javascript';
-    s.src = name;
-    s.async = false;
-    document.getElementsByTagName('head')[0].appendChild(s);
+    if (isPlatformBrowser(this.platformId)) {
+      let navMain = document.getElementById('navbarCollapse');
+      if (navMain) {
+        navMain.onclick = function () {
+          if (navMain) {
+            navMain.classList.remove("show");
+          }
+        }
+      }
+    }
+
   }
 
 }
