@@ -1,6 +1,6 @@
 # Angular 13 Example Modules
 
-> An Angular starter kit featuring [Angular 13.3.4](https://angular.io), [Angular CLI 13.3.3](https://cli.angular.io/)
+> An Angular starter kit featuring [Angular 13.3.5](https://angular.io), [Angular CLI 13.3.4](https://cli.angular.io/)
 
 > it's part of a repo series designed to create a Progressive Web App with Angular
 
