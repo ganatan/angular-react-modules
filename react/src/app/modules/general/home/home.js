@@ -57,7 +57,7 @@ class Home extends React.Component {
             <div className="card-header">
               <div className="row">
                 <div className="col-10 col-xl-10">
-                  <h5 className="card-title">{props.feature.name}</h5>
+                  <h4 className="card-title h5">{props.feature.name}</h4>
                 </div>
                 <div className="col-2 col-xl-2">
                   <i className="fab fa-bootstrap fa-lg text-primary"></i>
@@ -105,7 +105,7 @@ class Home extends React.Component {
           </div>
         </div>
         <div className="row pt-2">
-          {features.map((feature) => <Item key={feature} feature={feature} />)}
+          {features.map((feature) => <Item key={feature.name} feature={feature} />)}
         </div>
       </div >
     )
