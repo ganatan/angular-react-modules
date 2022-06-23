@@ -51,6 +51,9 @@ class Home extends React.Component {
       ];
 
     function Item(props) {
+
+      const iconclass = props["feature"].icon + " fa-lg text-primary";
+
       return <div className="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 mb-2">
         <div className="nga-card bg-light mb-3">
           <Link to={props.feature.link}>
@@ -60,7 +63,7 @@ class Home extends React.Component {
                   <h4 className="card-title h5">{props.feature.name}</h4>
                 </div>
                 <div className="col-2 col-xl-2">
-                  <i className="fab fa-bootstrap fa-lg text-primary"></i>
+                  <i className={iconclass}></i>
                 </div>
               </div>
             </div>
