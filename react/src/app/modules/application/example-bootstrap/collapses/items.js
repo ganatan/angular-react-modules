@@ -4,6 +4,20 @@ import './items.css';
 
 class Blockquotes extends React.Component {
 
+
+  closeCollapse() {
+    console.log('closeCollapse');
+  }
+
+  showCollapse() {
+    console.log('showCollapse');
+  }
+
+  toggleCollapse() {
+    console.log('toggleCollapse');
+  }
+
+
   render() {
 
 
@@ -36,9 +50,9 @@ class Blockquotes extends React.Component {
               </div>
             </div>
             <p>
-              <button type="button" className="btn btn-primary me-2" >Close</button >
-              <button type="button" className="btn btn-primary me-2" >Show</button>
-              <button type="button" className="btn btn-primary me-2" >Toggle</button>
+              <button type="button" className="btn btn-primary me-2" onClick={this.closeCollapse}>Close</button >
+              <button type="button" className="btn btn-primary me-2" onClick={this.showCollapse}>Show</button>
+              <button type="button" className="btn btn-primary me-2" onClick={this.toggleCollapse}>Toggle</button>
             </p>
           </div>
         </div>

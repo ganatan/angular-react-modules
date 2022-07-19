@@ -11,12 +11,12 @@ export class CollapsesComponent {
 
   constructor() { }
 
-
   closeCollapse() {
     const myCollapse = document.getElementById('collapseWidthJavascript')
     new bootstrap.Collapse(myCollapse, {
       hide: true,
     })
+
   }
 
   showCollapse() {

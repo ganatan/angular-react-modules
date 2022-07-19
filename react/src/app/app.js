@@ -3,7 +3,7 @@ import React from 'react';
 import { Link, NavLink } from "react-router-dom";
 
 import AppRouting from './app-routing';
-import ganatanLogo from '../assets/params/images/logo/ganatan-logo.png';
+// import ganatanLogo from '../assets/params/images/logo/ganatan-logo.png';
 
 import './app.css';
 
@@ -40,7 +40,7 @@ class App extends React.Component {
         <header className="navbar navbar-expand-md navbar-dark fixed-top nga-navbar">
           <nav className="container" aria-label="Main navigation">
             <NavLink className="navbar-brand" to="/">
-              <img src={ganatanLogo} width="25" height="25" alt="Ganatan Logo" />
+              <img src={require('../assets/params/images/logo/ganatan-logo.png')} width="25" height="25" alt="Ganatan Logo" />
               <span className="nga-logo mx-1">ganatan</span>
             </NavLink>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
@@ -72,7 +72,7 @@ class App extends React.Component {
                     className="fas fa-sign-in-alt me-2"></i>Login</button>
                 </Link>
               </form>
-              
+
             </div>
           </nav>
         </header>
