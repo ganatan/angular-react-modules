@@ -20,10 +20,10 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'angular-modules'`, () => {
+  it(`should have as title 'angular-bootstrap'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('angular-modules');
+    expect(app.title).toEqual('angular-bootstrap');
   });
 
 });
