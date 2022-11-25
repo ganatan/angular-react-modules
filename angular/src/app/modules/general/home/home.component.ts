@@ -1,12 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 import { Meta } from '@angular/platform-browser';
 import { environment } from '../../../../environments/environment';
+import { Feature } from './feature';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
+
+
+
 export class HomeComponent implements OnInit {
 
   name = environment.application.name;
@@ -14,7 +18,7 @@ export class HomeComponent implements OnInit {
   bootstrap = environment.application.bootstrap;
   fontawesome = environment.application.fontawesome;
 
-  features: Array<any>;
+  features: Array<Feature>;
 
   constructor(private meta: Meta) {
 
